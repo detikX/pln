@@ -59,17 +59,32 @@
         width: fit-content;
         padding: 8px;
         color: $yellow;
+        h3 {
+            font-size: 3rem;
+        }
     }
 
+    .lokasi {
+        .img {
+            width: 100%;
+            height: fit-content;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
     .data-pom {
         .cards{
-            width: 320px;
-            border: 1px solid;
+            width: fit-content;
+            // border: 1px solid;
             padding: 8px;
             margin: 8px 0;
             position: relative;
             z-index: 8;
-            background: rgba($color: white, $alpha: .8);
+            // backdrop-filter: blur(5px);
+            background: rgba($color: white, $alpha: .9);
             .judul {
                 font-size: 1.3rem;
             }
