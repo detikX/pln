@@ -53,4 +53,26 @@
             }
         }
     }
+
+    .total {
+        background: $pln;
+        width: fit-content;
+        padding: 8px;
+        color: $yellow;
+    }
+
+    .data-pom {
+        .cards{
+            width: 320px;
+            border: 1px solid;
+            padding: 8px;
+            margin: 8px 0;
+            .judul {
+                font-size: 1.3rem;
+            }
+            .jml {
+                font-size: 2.2rem;
+            }
+        }
+    }
 }
