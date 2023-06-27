@@ -78,7 +78,8 @@
     }
     .data-pom {
         .cards{
-            width: fit-content;
+            // width: fit-content;
+            width: 100%;
             // border: 1px solid;
             padding: 8px;
             margin: 8px 0;
@@ -86,13 +87,21 @@
             z-index: 8;
             border-radius: 8px;
             // backdrop-filter: blur(5px);
-            color: $biru_pln;
-            background: rgba($color: $white, $alpha: .9);
-            .judul {
-                font-size: 1.3rem;
+            background: rgba($color: $biru_pln, $alpha: .9);
+            .pulau {
+                font-size: 1rem;
+                color: $yellow;
             }
             .jml {
+                color: $white;
                 font-size: 2.2rem;
+                &::after {
+                    content: "lokasi";
+                    font-size: 1rem;
+                    position: absolute;
+                    top: 50%;
+                    margin-left: 8px;
+                }
             }
         }
     }
