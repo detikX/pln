@@ -67,6 +67,9 @@
             border: 1px solid;
             padding: 8px;
             margin: 8px 0;
+            position: relative;
+            z-index: 8;
+            background: rgba($color: white, $alpha: .8);
             .judul {
                 font-size: 1.3rem;
             }
