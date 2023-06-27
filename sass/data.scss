@@ -55,10 +55,11 @@
     }
 
     .total {
-        background: $pln;
+        // background: white;
         width: fit-content;
         padding: 8px;
-        color: $yellow;
+        text-shadow: 1px 1px black;
+        color: $biru_pln;
         h3 {
             font-size: 3rem;
         }
