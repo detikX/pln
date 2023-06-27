@@ -83,8 +83,10 @@
             margin: 8px 0;
             position: relative;
             z-index: 8;
+            border-radius: 8px;
             // backdrop-filter: blur(5px);
-            background: rgba($color: white, $alpha: .9);
+            color: $biru_pln;
+            background: rgba($color: $white, $alpha: .9);
             .judul {
                 font-size: 1.3rem;
             }

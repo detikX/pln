@@ -1,4 +1,14 @@
 .banner {
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        z-index: 9;
+        background: linear-gradient(to top, $blue, transparent);
+    }
     .img {
         position: absolute;
         inset: 0;
