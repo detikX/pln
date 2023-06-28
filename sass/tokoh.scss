@@ -12,7 +12,7 @@
         transform: rotate(2deg);
         position: relative;
         &.rotates{
-            transform: rotate(-2deg) !important;
+            transform: rotate(0deg) !important;
         }
         // transform: skewX(-10deg);
         &::before {
