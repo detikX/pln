@@ -1,4 +1,30 @@
 .tokoh {
+
+    .responsive{
+        @media screen and (max-width:766px) {
+            margin: 0 8px;
+        }
+    }
+    .square {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient($blue, rgba($blue,.1), $blue);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            @media screen and (max-width:766px) {
+                object-fit: cover;
+            }
+        }
+    }
     .a {
 
         transform: skewX(10deg);
@@ -7,10 +33,14 @@
         width: 100%;
         margin: 0 auto;
         display: block;
-        height: 320px;
-        border: 4px solid white;
+        border: 8px solid white;
         transform: rotate(2deg);
         position: relative;
+        height: 420px;
+        @media screen and (max-width:766px) {
+            height: 320px;
+            
+        }
         &.rotates{
             transform: rotate(0deg) !important;
         }
