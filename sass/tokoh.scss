@@ -15,6 +15,9 @@
             position: absolute;
             inset: 0;
             background: linear-gradient($blue, rgba($blue,.1), $blue);
+            @media screen and (max-width:766px) {
+                background: linear-gradient(to top, transparent, $blue);
+            }
         }
         img {
             width: 100%;
