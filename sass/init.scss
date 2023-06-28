@@ -314,3 +314,17 @@ section {
     }
 }
 
+
+.bg {
+    padding: 8px;
+    border-radius: 8px;
+    &-whites {
+        background: rgba($color: white, $alpha: .8);
+    }
+}
+
+.x {
+    &-100 {
+        height: 80vh;
+    }
+}
