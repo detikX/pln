@@ -4,11 +4,11 @@ body {
 
 .o-hidden {
     // overflow-x: hidden;
-    overflow-x: clip;
 }
 
 body,
 main {
+    overflow-x: clip;
     // font-family: 'Aeonik Regular', sans-serif;
     font-family: 'Prompt', sans-serif;
     // font-family: 'Nunito Sans', sans-serif;

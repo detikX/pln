@@ -1,0 +1,39 @@
+.tokoh {
+    .a {
+
+        transform: skewX(10deg);
+    }
+    .img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        height: 320px;
+        border: 4px solid white;
+        transform: rotate(2deg);
+        position: relative;
+        &.rotates{
+            transform: rotate(-2deg) !important;
+        }
+        // transform: skewX(-10deg);
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to top, black, transparent);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .h4 {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            color: white;
+        }
+    }
+}
