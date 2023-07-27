@@ -1,15 +1,78 @@
 .perbandingan {
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: auto;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, $blue, rgba($blue,.2),$blue);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+        }
+    }
     h4 {
         font-weight: 700;
-        font-size: 2.3rem;
+        font-size: 2rem;
         position: absolute;
-        top: -34px;
+        top: -32px;
         font-style: italic;
         margin-bottom: 0;
         text-shadow: 1px 1px white;
         margin-left: 24px;
         color: #12726c;
+        @media screen and (max-width:766px) {
+            font-size: 1.2rem;
+            position: absolute;
+            top: -24px;
+            margin-left: -6px;
+        
+        }
         // text-transform: uppercase;
+    }
+    .ev {
+        .img {
+            position: absolute;
+            right: -18%;
+            width: 200px;
+            height: auto;
+            bottom: 0;
+            @media screen and (max-width:766px) {
+                right: -22%;
+                bottom: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .ice {
+        .img {
+            position: absolute;
+            left: -18%;
+            width: 200px;
+            height: auto;
+            bottom: 0;
+            @media screen and (max-width:766px) {
+                left: -22%;
+                bottom: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     }
     .boxz {
         background: white;
@@ -34,7 +97,7 @@
             li {
                 padding-left: var(--icon-space);
                 border-bottom: 1px solid #47bab3;
-                width: 50%;
+                width: 75%;
                 padding-bottom: 2px;
                 margin-bottom: 8px;
                 &::before {
