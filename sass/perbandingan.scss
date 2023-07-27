@@ -52,7 +52,7 @@
             font-size: 1.2rem;
             position: absolute;
             top: -24px;
-            margin-left: -6px;
+            margin-left: -10px;
         
         }
         // text-transform: uppercase;
@@ -120,6 +120,9 @@
                 width: 75%;
                 padding-bottom: 2px;
                 margin-bottom: 8px;
+                @media screen and (max-width:766px) {
+                    width: 100%;
+                }
                 &::before {
                     content: '\f05d';
                     // font-size: var(--icon-space);
