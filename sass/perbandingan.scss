@@ -25,6 +25,9 @@
         left: 0;
         width: 40%;
         height: auto;
+        @media screen and (max-width:766px) {
+            width: 100%;
+        }
         &::before {
             content: "";
             position: absolute;
