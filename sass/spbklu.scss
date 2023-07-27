@@ -1,0 +1,33 @@
+.spbklu {
+    .semua {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        width: 85%;
+        transform: translate(-50%,0);
+        // right: 0;
+        .mobil {
+            width: 35vw;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .baterai {
+            position: absolute;
+            bottom: 50%;
+            // right: 15%;
+            left: 50%;
+
+            width: auto;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
