@@ -6,11 +6,29 @@
         width: 85%;
         transform: translate(-50%,0);
         // right: 0;
+
+
+        
+        @keyframes neon {
+            0%, 100% {
+                filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+              
+            }
+            50% {
+                filter: initial;
+              
+            }
+          }
         .mobil {
             width: 35vw;
             height: auto;
+            filter: initial;
+            animation: neon 1s linear infinite;
             @media screen and (max-width:766px) {
-                width: 80vw;
+                width: 100vw;
+                position: absolute;
+                bottom: 15%;
+                left: -50%;
             }
             img {
                 width: 100%;
@@ -27,10 +45,19 @@
               bottom: 55%;
             }
           }
+
+          @keyframes MoveUpDownmob {
+            0%, 100% {
+              height: 50vh;
+            }
+            50% {
+              height: 55vh;
+            }
+          }
         .bateraix {
             position: absolute;
             bottom: 50%;
-            animation: MoveUpDown 1s linear infinite;
+            animation: MoveUpDown 2s linear infinite;
             // right: 15%;
             left: 50%;
 
@@ -38,6 +65,31 @@
             height: auto;
             @media screen and (max-width:766px) {
                 width: 35vw;
+                height: 50vh;
+                bottom: 75%;
+                left: 65%;
+                animation: MoveUpDownmob 1s linear infinite;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .panah {
+            position: absolute;
+            left: 30%;
+            width: 20%;
+            bottom: 50%;
+            height: auto;
+            @media screen and (max-width:766px) {
+                position: absolute;
+                left: 30%;
+                width: 47%;
+                bottom: 100%;
+                height: 33vh;
+                transform: rotate(-16deg);
             }
             img {
                 width: 100%;
