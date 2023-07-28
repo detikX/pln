@@ -212,6 +212,10 @@
             z-index: -1;
             right: 0;
             left: 0;
+            display: block;
+            @media screen and (max-width:766px) {
+                display: none;
+            }
             &::before {
                 content: "";
                 position: absolute;
