@@ -1,4 +1,17 @@
 .banner {
+    @keyframes mengkilat {
+        0%, 100% {
+          top: 0;
+        }
+        50% {
+          top: -5px;
+        }
+      }
+    .mengkilat {
+        position: relative;
+        top: 0;
+        animation: mengkilat .5s linear infinite;;
+    }
     &::before {
         content: "";
         position: absolute;
