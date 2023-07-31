@@ -1,5 +1,6 @@
 .pln-mobile {
     padding: 0;
+   
     .bg {
         position: absolute;
         inset: 0;
@@ -21,10 +22,11 @@
     .ilustrasi {
         position: absolute;
         left: -24%;
-        top: 0;
+        bottom: 0;
         z-index: 2;
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
+    
         img {
             width: 100%;
             height: 100%;
@@ -36,10 +38,10 @@
         .hp {
             position: absolute;
             left: 0;
-            top: 0;
+            bottom: 0;
             width: 70vw;
             z-index: 8;
-            height: 100vh;
+            height: 85vh;
             @media screen and (max-width:766px) {
                 width: 100vw;
             }
@@ -47,6 +49,41 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+            }
+        }
+        .org {
+            &::after {
+                @media screen and (max-width:766px) {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(to right, transparent, $blue);
+                
+                }
+            }
+            @media screen and (max-width:766px) {
+                position: absolute;
+                left: 0;
+                right: initial;
+                bottom: initial;
+                top: 0;
+                width: 50vw;
+                z-index: 1;
+                height: 45vh;
+            }
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 60vw;
+            z-index: 1;
+            height: 60vh;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                @media screen and (max-width:766px) {
+                    object-fit: cover;
+                }
             }
         }
     }
