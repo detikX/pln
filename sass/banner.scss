@@ -36,13 +36,13 @@
     &__title {
         position: absolute;
         left: 50%;
-        top: 25%;
-        transform: translate(-50%,-50%) ;
+        top: 18%;
+        text-align: center;
+        transform: translate(-50%, -50%);
         z-index: 6;
-        color: $pln;
+        color: #20253f;
         font-weight: bold;
-        text-shadow: 2px 2px white;
-        // text-align: center;
+        text-shadow: 2px 2px #fff;
         width: 60%;
         @media screen and (max-width:766px) {
             width: 100%;
