@@ -136,7 +136,57 @@
 
 .baterai {
     position: relative;
-    
+    .imgs {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        .car {
+            width: 50vw;
+            height: 120vh;
+            position: absolute;
+            bottom: -5vh;
+            right: -8vw;
+            @media screen and (max-width:766px) {
+                width: 60vw;
+                height: 120vh;
+                position: absolute;
+                bottom: -5vh;
+                right: 1vw;
+            }
+        
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .pom {
+            width: 59vw;
+            height: 120vh;
+            position: absolute;
+            top: -15vh;
+            right: -4vw;
+            z-index: 9;
+            @media screen and (max-width:766px) {
+                width: 100vw;
+                height: 120vh;
+                position: absolute;
+                top: -15vh;
+                right: -4vw;
+                z-index: 9;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+        }
+    }
     .bgx {
         position: absolute;
         inset: 0;
