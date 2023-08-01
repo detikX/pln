@@ -10,7 +10,7 @@
     .mengkilat {
         position: relative;
         top: 0;
-        animation: mengkilat .5s linear infinite;;
+        animation: mengkilat .5s linear infinite;
     }
     &::before {
         content: "";
@@ -44,7 +44,7 @@
             width: auto;
             height: 65vh;
             right: -35vw;
-            bottom: -15vh;
+            bottom: -5vh;
         }
         img {
             width: 100%;
