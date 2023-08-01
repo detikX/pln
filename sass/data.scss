@@ -278,7 +278,7 @@
             left: 0;
             display: block;
             @media screen and (max-width:766px) {
-                display: none;
+                // display: none;
             }
             &::before {
                 content: "";
