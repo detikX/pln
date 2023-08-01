@@ -87,9 +87,27 @@
         }
     }
 
+    @keyframes gerak {
+        0%, 100% {
+          top: 0;
+        }
+        50% {
+          top: -10px;
+        }
+      }
     .lokasi {
+        .imgs {
+            position: absolute;
+            top: 0;
+        }
+        h3 {
+            animation: gerak .7s linear infinite;
+        }
         .img {
-            width: 35vw;
+            position: relative;
+            left: 0;
+            width: 100%;
+            // animation: gerak 2s linear infinite;
             height: fit-content;
             @media screen and (max-width:766px) {
                 width: 100%;
@@ -121,8 +139,11 @@
                 color: $white;
                 font-weight: 700;
                 font-size: 2.2rem;
+                small {
+                    font-size: 1rem;
+                }
                 &::after {
-                    content: "lokasi";
+                    content: "";
                     font-size: 1rem;
                     font-weight: 300;
                     position: absolute;
@@ -148,6 +169,7 @@
             height: 120vh;
             position: absolute;
             bottom: -5vh;
+            // z-index: 9;
             right: -8vw;
             @media screen and (max-width:766px) {
                 width: 60vw;
@@ -348,4 +370,8 @@
             object-fit: cover;
         }
     }
+}
+
+.h10 {
+    height: 70vh;
 }

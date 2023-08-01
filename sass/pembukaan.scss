@@ -1,7 +1,71 @@
 .pembukaan {
     // background: $blue;
-    min-height: auto;
+    // min-height: auto;
+    &__sticky {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
 
+    p {
+        height: 80vh;
+    }
+    .mobil {
+        position: absolute;
+        /* bottom: 15%; */
+        /* left: 50%; */
+        transform: translate(-50%, 0);
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        /* top: 72px; */
+        z-index: 2;
+        @media screen and (max-width:766px){
+            width: 100%;
+            height: 100vh;
+            transform: initial;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .kota-jak {
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 50vh;
+        display: none;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .org {
+        position: absolute;
+        right: 25%;
+        bottom: 40%;
+        width: 10%;
+        height: auto;
+        transform: translate(0%, 0%);
+        @media screen and (max-width:766px) {
+            position: absolute;
+            width: 23%;
+            height: auto;
+            right: 5%;
+            bottom: 44%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     .square {
         position: absolute;
         inset: 0;
