@@ -87,9 +87,20 @@
         }
     }
 
+    @keyframes gerak {
+        0%, 100% {
+          left: 0;
+        }
+        50% {
+          left: -5px;
+        }
+      }
     .lokasi {
         .img {
+            position: relative;
+            left: 0;
             width: 35vw;
+            animation: gerak 2s linear infinite;
             height: fit-content;
             @media screen and (max-width:766px) {
                 width: 100%;
@@ -121,8 +132,11 @@
                 color: $white;
                 font-weight: 700;
                 font-size: 2.2rem;
+                small {
+                    font-size: 1rem;
+                }
                 &::after {
-                    content: "lokasi";
+                    content: "";
                     font-size: 1rem;
                     font-weight: 300;
                     position: absolute;
@@ -348,4 +362,8 @@
             object-fit: cover;
         }
     }
+}
+
+.h10 {
+    height: 70vh;
 }
