@@ -106,7 +106,7 @@
         .img {
             position: relative;
             left: 0;
-            width: 35vw;
+            width: 100%;
             // animation: gerak 2s linear infinite;
             height: fit-content;
             @media screen and (max-width:766px) {
@@ -169,6 +169,7 @@
             height: 120vh;
             position: absolute;
             bottom: -5vh;
+            // z-index: 9;
             right: -8vw;
             @media screen and (max-width:766px) {
                 width: 60vw;
@@ -189,7 +190,7 @@
             height: 120vh;
             position: absolute;
             top: -15vh;
-            right: -4vw;
+            right: -3vw;
             z-index: 9;
             @media screen and (max-width:766px) {
                 width: 100vw;
