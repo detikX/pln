@@ -105,11 +105,10 @@
             animation: gerak .7s linear infinite;
         }
         .img {
-            position: relative;
-            left: 0;
-            width: 90%;
-            // animation: gerak 2s linear infinite;
-            height: fit-content;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
             @media screen and (max-width:766px) {
                 width: 100%;
             }
@@ -121,6 +120,7 @@
         }
     }
     .data-pom {
+      
         .cards{
             // width: fit-content;
             width: 100%;
@@ -375,6 +375,6 @@
     }
 }
 
-.h10 {
-    height: 70vh;
-}
+// .h10 {
+//     height: 70vh;
+// }
