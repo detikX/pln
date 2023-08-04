@@ -2,6 +2,23 @@ $(document).ready(function() {
     AOS.init()
 })
 
+// $.ajax({
+// 	url: 'https://dediwibisono17.github.io/kisah-nabi/assets/js/kisah.json',
+//   method: 'GET',
+//   success: function (response) {
+//   	// console.log(response);
+//     var a;
+//     for (a=0; a<response.length;a++) {
+//         console.log(response[a].description);
+//         $("#app").append(`
+//             <div class="desc">
+//             ${response[a].description}
+//             </div> <br>
+//         `)
+//     }
+//   }
+// })
+
 $('.responsive').slick({
     dots: true,
     infinite: true,

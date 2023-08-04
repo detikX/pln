@@ -106,7 +106,7 @@
         .img {
             position: relative;
             left: 0;
-            width: 100%;
+            width: 90%;
             // animation: gerak 2s linear infinite;
             height: fit-content;
             @media screen and (max-width:766px) {
@@ -292,7 +292,7 @@
         height: 100%;
         width: 100%;
         .taman {
-            position: absolute;
+            position: relative;
             width: 100vw;
             height: 100vh;
             z-index: -1;
