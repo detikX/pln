@@ -44,6 +44,15 @@
               
             }
           }
+          @keyframes asaps {
+            0%, 100% {
+              right: -78%;
+            }
+            50% {
+              right: -68%;
+              
+            }
+          }
         .polusi {
             position: absolute;
             right: -110%;
@@ -51,6 +60,9 @@
             width: 100px;
             height: auto;
             animation: asap 1s linear infinite;
+            &.boxs {
+                animation: asaps .8s linear infinite;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -63,7 +75,7 @@
             position: absolute;
             z-index: 4;
             left: 50%;
-            bottom: 0%;
+            bottom: 8%;
             animation: linear infinite;
             animation-name: banner;
             animation-duration: 20s;
@@ -76,12 +88,19 @@
             }
         }
 
-        .mobil {
+        .mobilx {
             width: 130px;
             height: auto;
             position: absolute;
             left: 50%;
-            bottom: 2%;
+            bottom: 8%;
+            .polusi {
+                right: -78%;
+                
+            }
+            animation: linear infinite;
+            animation-name: banner;
+            animation-duration: 25s;
             
            
             img {
