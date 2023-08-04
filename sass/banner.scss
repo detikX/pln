@@ -1,4 +1,5 @@
 .banner {
+    padding: 0;
     @keyframes mengkilat {
         0%, 100% {
           top: 0;
@@ -20,7 +21,7 @@
         right: 0;
         height: 100px;
         z-index: 9;
-        background: linear-gradient(to top, $blue, transparent);
+        background: linear-gradient(to top, #ccc, transparent);
     }
     .img {
         position: absolute;
