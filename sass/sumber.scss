@@ -1,6 +1,7 @@
 .sumber {
-    background: linear-gradient(to bottom, #ebf8e5, $blue);
+    // background: linear-gradient(to bottom, #ebf8e5, $blue);
     // background: $blue;
+    background: #ebf8e5;
     min-height: auto;
     border-top: 1px solid $blue;
     .img {
@@ -16,5 +17,15 @@
             object-fit: contain;
 
         }
+    }
+}
+
+.credit {
+    background: #94e6e0;
+    .titled {
+        color: #535353;
+    }
+    .name {
+        font-weight: bold;
     }
 }
