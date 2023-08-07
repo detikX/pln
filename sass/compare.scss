@@ -27,6 +27,11 @@
             }
 
         }
+        .text-center {
+            @media screen and (max-width:766px) {
+                text-align: left !important;
+            }
+        }
         .icon {
             // width: 150px;
             // height: auto;
@@ -82,6 +87,8 @@
             height: 80px;
             @media screen and (max-width:766px) {
                 height: auto;
+                width: 85%;
+                margin: 0 auto;
             }
             img {
                 width: 100%;
