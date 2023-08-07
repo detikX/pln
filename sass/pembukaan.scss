@@ -74,7 +74,9 @@
         bottom: 3vh;
         z-index: 6;
         @media screen and (max-width:766px) {
-            left: 10vw;
+            left: 4vw;
+            height: 170px;
+            bottom: 5vh;
         }
         img {
             width: 100%;
