@@ -9,8 +9,9 @@
             @media screen and (max-width:766px) {
                 box-shadow: -2px 3px 6px #444;
                 border-radius: 8px;
-                width: 48%;
-                display: inline-block;
+                width: 75%;
+                display: block;
+                margin: 0 auto;
                 vertical-align: top;
             }
             &::before {
@@ -39,14 +40,32 @@
             margin-top: 4px;
             padding: 8px;
             @media screen and (max-width:766px) {
-                margin-top: 0;
-                width: 48%;
-                display: inline-block;
+                margin: 4px auto 16px;
+                width: 75%;
+                display: block;
                 vertical-align: top;
                 box-shadow: 2px 3px 6px #444;
                 border-radius: 8px;
             }
+
+            .icon {
+                @media screen and (max-width:766px) {
+                    display: inline-block;
+                    width: 45%;
+                    vertical-align: top;
+                }
+            }
+            p{
+                &.small {
+                    @media screen and (max-width:766px) {
+                        display: inline-block;
+                        width: 50%;
+                    
+                    }
+                }
+            }
         }
+        
         .judul {
             margin-bottom: 8px;
             height: 60px;
