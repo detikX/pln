@@ -46,6 +46,7 @@
         font-size: 2rem;
         position: absolute;
         top: -32px;
+        z-index: 5;
         font-style: italic;
         margin-bottom: 0;
         text-shadow: 1px 1px white;
@@ -68,7 +69,7 @@
             height: auto;
             bottom: 0;
             @media screen and (max-width:766px) {
-                right: -22%;
+                right: -36%;
                 bottom: 0;
             }
             img {
@@ -87,7 +88,7 @@
             height: auto;
             bottom: 0;
             @media screen and (max-width:766px) {
-                left: -22%;
+                left: -36%;
                 bottom: 0;
                 width:175px;
             }
