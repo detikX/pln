@@ -1,5 +1,6 @@
 .data {
-    background: #ebf8e5;
+    // background: #ebf8e5;
+    background: linear-gradient(to bottom, $blue, #ebf8e5);
     .bg {
         position: absolute;
         inset: 0;
