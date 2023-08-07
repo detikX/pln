@@ -10,7 +10,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $blue, rgba($blue,.2),$blue);
+            background: linear-gradient(to top, $blue, rgba($blue,.5),$blue);
         }
         img {
             width: 100%;
@@ -63,12 +63,12 @@
     .ev {
         .img {
             position: absolute;
-            right: -18%;
+            left: -18%;
             width: 200px;
             height: auto;
             bottom: 0;
             @media screen and (max-width:766px) {
-                right: -36%;
+                left: -42%;
                 bottom: 0;
             }
             img {
@@ -82,12 +82,12 @@
     .ice {
         .img {
             position: absolute;
-            left: -20%;
+            right: -20%;
             width: 200px;
             height: auto;
             bottom: 0;
             @media screen and (max-width:766px) {
-                left: -36%;
+                right: -36%;
                 bottom: 0;
                 width:175px;
             }

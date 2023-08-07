@@ -106,12 +106,17 @@
             animation: gerak .7s linear infinite;
         }
         .img {
-            position: absolute;
+            position: relative;
             inset: 0;
             width: 100%;
-            height: 100%;
+            height: 80vh;
             @media screen and (max-width:766px) {
+                position: relative;
+                /* inset: 0; */
                 width: 100%;
+                inset: initial;
+                top: -16vh;
+                height: 80vh;
             }
             img {
                 width: 100%;
@@ -376,6 +381,6 @@
     }
 }
 
-// .h10 {
-//     height: 70vh;
-// }
+.h10 {
+    height: 70vh;
+}
