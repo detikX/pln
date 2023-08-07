@@ -21,7 +21,14 @@
 }
 
 .credit {
-    background: #94e6e0;
+    background: #b4e8e4;
+    min-height: auto;
+    h3 {
+        font-size: 2rem;
+        &::before {
+            top: 10px !important;
+        }
+    }
     .titled {
         color: #535353;
     }
