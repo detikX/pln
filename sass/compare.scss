@@ -51,6 +51,9 @@
             margin-bottom: 8px;
             height: 60px;
             font-weight: 700;
+            @media screen and (max-width:766px) {
+                height: auto;
+            }
         }
         .img {
             width: 100%;
