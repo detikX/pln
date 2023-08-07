@@ -19,41 +19,51 @@ $(document).ready(function() {
 //   }
 // })
 
-$('.responsive').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    fade:true,
-    slidesToScroll: 1,
-    responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
-});
+gsap.timeline({
+    scrollTrigger: {
+      trigger: ".box",
+      start: "center center",
+      end: "bottom top",
+      scrub: 1,
+      pin:true
+    }
+  })
+  .from(".text1", {
+    x: innerWidth * 1  
+  })
+  .from(".text2", {
+    x: innerWidth * -1  
+  })
+  .from(".text3", {
+    x: innerWidth * 1  
+  })
+  .from(".logo", {
+    y: innerHeight * 1,
+    rotate:360
+  })
+  
+  
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".box2",
+      start: "center center",
+      end: "bottom top",
+      scrub: 1,
+      pin:true
+    }
+  })
+  .from(".box2", {
+    opacity: 0,
+  })
+  .from(".text4", {
+    y: innerHeight * 1,
+    stagger : {
+      amount : 0.5,
+    }
+  })  
+  
+  
+  
 
 // $(".data-detail").hide()
 $(".gambar").click(function(){
