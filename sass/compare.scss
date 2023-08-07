@@ -7,6 +7,8 @@
             position: relative;
             // margin-bottom: 8px;
             @media screen and (max-width:766px) {
+                box-shadow: -2px 3px 6px #444;
+                border-radius: 8px;
                 width: 48%;
                 display: inline-block;
                 vertical-align: top;
@@ -41,6 +43,8 @@
                 width: 48%;
                 display: inline-block;
                 vertical-align: top;
+                box-shadow: 2px 3px 6px #444;
+                border-radius: 8px;
             }
         }
         .judul {
@@ -86,6 +90,7 @@
         width: 24%;
         vertical-align: top;
         margin-bottom: 16px;
+        
         @media screen and (max-width:766px) {
             width: 100%;
             display: block;
