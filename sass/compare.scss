@@ -6,6 +6,11 @@
             padding: 8px 8px 0;
             position: relative;
             // margin-bottom: 8px;
+            @media screen and (max-width:766px) {
+                width: 48%;
+                display: inline-block;
+                vertical-align: top;
+            }
             &::before {
                 content: "";
                 position: absolute;
@@ -31,6 +36,12 @@
         .bawah {
             margin-top: 4px;
             padding: 8px;
+            @media screen and (max-width:766px) {
+                margin-top: 0;
+                width: 48%;
+                display: inline-block;
+                vertical-align: top;
+            }
         }
         .judul {
             margin-bottom: 8px;
@@ -76,7 +87,8 @@
         vertical-align: top;
         margin-bottom: 16px;
         @media screen and (max-width:766px) {
-            width: 49%;
+            width: 100%;
+            display: block;
         }
     }
 }
