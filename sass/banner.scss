@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "quicksilver";
+    src: url('Quicksilver.woff');
+    src: local('quicksilver');
+    src: url('Quicksilver.woff') format('woff');
+}
+
+
+
 .banner {
     padding: 0;
     @keyframes mengkilat {
@@ -82,9 +91,11 @@
         h2 {
             font-size: 3.7rem;
             line-height: 3.7rem;
+            font-family: 'quicksilver',sans-serif;
+            font-style: italic;
             @media screen and (max-width:766px) {
-                font-size: 2.5rem;
-                line-height: 2.5rem;
+                font-size: 2.2rem;
+                line-height: 2.2rem;
             }
         }
         
