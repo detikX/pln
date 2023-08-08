@@ -290,4 +290,41 @@
             }
         }
     }
+    
+    :root {
+        --accent-gray: #CECCCC;
+      }
+    .blade-wrapper {
+        position: relative;
+        width: 450px;
+        height: 450px;
+    }
+    .blade {
+        position: absolute;
+        width: 20px;
+        height: 10px;
+        background: white;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            width: 200px;
+            height: 20px;
+            background: linear-gradient(white, var(--accent-gray) 40%, white);
+            clip-path: polygon(20% 0, 0% 100%, 100% 100%);
+        }
+        &.one {
+
+        }
+    }
+      
+    .pole {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 400px;
+        background: linear-gradient(to right, var(--accent-gray), white, var(--accent-gray));
+      }
 }

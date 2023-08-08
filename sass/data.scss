@@ -122,17 +122,20 @@
           }
         .awan {
             position: absolute;
-            width: 80px;
+            width: 100px;
             opacity: .6;
             height: auto;
+            @media screen and (max-width:766px) {
+                width: 60px;
+            }
             &-1 {
                 
-                top: 28%;
+                top: 15%;
                 left: 60%;
                 animation: awan1 2s linear infinite;
             }
             &-2 {
-                top: 25%;
+                top: 16%;
                 left: 22%;
                 width: 60px;
                 animation: awan2 2.5s linear infinite;
