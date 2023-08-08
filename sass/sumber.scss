@@ -2,8 +2,8 @@
     // background: linear-gradient(to bottom, #ebf8e5, $blue);
     // background: $blue;
     background: #ebf8e5;
-    // min-height: 70vh;
-    min-height: auto;
+    min-height: 50vh;
+    // min-height: auto;
     border-top: 1px solid $blue;
     .img {
         width: 240px;
@@ -21,17 +21,19 @@
     }
 }
 
+$greenx: #99d871;
 .credit {
-    background: #b4e8e4;
+    // background: #b4e8e4;
+    background: linear-gradient(to bottom, $greenx, $blue);
     min-height: auto;
     .testx {
         position: absolute;
-        display: none;
+        // display: none;
         left: 0;
         right: 0;
-        top: -15vh;
-        width: 100%;
-        height: 50%;
+        top: -16vh;
+        width: auto;
+        height: 40%;
         img {
             width: 100%;
             height: 100%;
@@ -49,7 +51,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $blue, rgba($blue,.7), $blue);
+            background: linear-gradient(to top, $greenx, rgba($greenx,.7), $greenx);
         }
         img {
             width: 100%;
