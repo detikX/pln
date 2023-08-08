@@ -63,11 +63,11 @@
     .ev {
         .img {
             position: absolute;
-            right: -6%;
-            width: 259px;
-            height: auto;
-            bottom: 0;
-            z-index: 9;
+    right: -14%;
+    width: 259px;
+    height: auto;
+    bottom: -5px;
+    z-index: 9;
             @media screen and (max-width:766px) {
                 left: -42%;
                 bottom: -4px;
@@ -84,16 +84,21 @@
 
     .ice {
         .img {
-            position: absolute;
-    right: -5%;
-    width: 216px;
+            
+    position: absolute;
+    right: -10%;
+    width: 200px;
     height: auto;
-    bottom: 6px;
+    bottom: -2px;
     z-index: 9;
+
             @media screen and (max-width:766px) {
+                position: absolute;
                 right: -36%;
-                bottom: 0;
-                width:175px;
+                width: 170px;
+                height: auto;
+                bottom: -2px;
+            
             }
             img {
                 width: 100%;
@@ -107,7 +112,7 @@
         padding: 16px;
         transform: skewX(-5deg);
         // border-radius: 8px;
-        border: 6px solid #12726c;
+        // border: 6px solid #12726c;
         &::before {
             content: "";
             position: absolute;

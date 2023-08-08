@@ -102,6 +102,47 @@
             position: absolute;
             top: 0;
         }
+
+        @keyframes awan1 {
+            0%, 100% {
+              left: 60%;
+            }
+            50% {
+              left: 63%;
+            }
+          }
+
+          @keyframes awan2 {
+            0%, 100% {
+              left: 22%;
+            }
+            50% {
+              left: 25%;
+            }
+          }
+        .awan {
+            position: absolute;
+            width: 80px;
+            opacity: .6;
+            height: auto;
+            &-1 {
+                
+                top: 28%;
+                left: 60%;
+                animation: awan1 2s linear infinite;
+            }
+            &-2 {
+                top: 25%;
+                left: 22%;
+                width: 60px;
+                animation: awan2 2.5s linear infinite;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
         h3 {
             animation: gerak .7s linear infinite;
         }
