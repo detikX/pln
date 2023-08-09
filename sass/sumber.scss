@@ -24,7 +24,7 @@
 $greenx: #99d871;
 .credit {
     // background: #b4e8e4;
-    background: linear-gradient(to bottom, $greenx, $blue);
+    background: linear-gradient(to bottom, $greenx 35%, $blue);
     min-height: auto;
     .testx {
         position: absolute;
