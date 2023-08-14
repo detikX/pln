@@ -90,21 +90,20 @@
 }
 .outer {
 	border: 2px solid #333;
-	width: 90px;
-	// display: none !important;
-	height: 42px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	padding: 3px;
-	border-radius: 5px;
-	// position: relative;
+    width: 60px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3px;
+	display: none !important;
+    border-radius: 5px;
     position: absolute;
     z-index: 9;
-    transform: translate(-50%, -100%) rotate(-90deg);
-	top: 42vh;
+    transform: translate(-50%, -100%) rotate(-90deg) skew(-2deg, 0deg);
+    top: 78vh;
     background: #fff;
-    left: 47vw;
+    left: 52.8vw;
 	@media screen and (max-width:766px) {
 		left: 42vw;
 		top: 50vh;
@@ -162,7 +161,7 @@
 .flash {
 	color: $yellow;
     position: absolute;
-    top: 9%;
+    top: 0%;
     left: 44%;
     z-index: 9;
 	transform: rotate(90deg);
