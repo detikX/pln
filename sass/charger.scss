@@ -91,6 +91,7 @@
 .outer {
 	border: 2px solid #333;
 	width: 90px;
+	// display: none !important;
 	height: 42px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -100,7 +101,7 @@
 	// position: relative;
     position: absolute;
     z-index: 9;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%, -100%) rotate(-90deg);
 	top: 42vh;
     background: #fff;
     left: 47vw;
@@ -112,16 +113,16 @@
 	}
 	&:after {
 		display: block;
-		position: absolute;
-		top: 5px;
-		left: 87px;
-		z-index: -1;
-		content: "";
-		width: 4px;
-		height: 30px;
-		background: #333;
-		border-top-right-radius: 3px;
-		border-bottom-right-radius: 3px;
+    position: absolute;
+    top: 0px;
+    left: 58px;
+    z-index: -1;
+    content: "";
+    width: 4px;
+    height: 25px;
+    background: #333;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 		@media screen and (max-width:766px) {
 			top: 1px;
 			left: 77px;
@@ -164,6 +165,7 @@
     top: 9%;
     left: 44%;
     z-index: 9;
+	transform: rotate(90deg);
     font-size: 20px;
 }
 .fadeIn {
