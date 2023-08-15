@@ -17,6 +17,55 @@
           top: -5px;
         }
       }
+      .coba-selang {
+        position: absolute;
+    top: 64%;
+    left: 35%;
+    width: 129px;
+    height: auto;
+    @media screen and (max-width:766px) {
+        top: 61%;
+        left: 3%;
+        width: 115px;
+    }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+      }
+
+      @keyframes neonzx {
+        0%, 100% {
+            filter: drop-shadow(0rem -2rem 0.75rem $blue);
+          
+        }
+        50% {
+            filter: initial;
+          
+        }
+      }
+      .coba-mobil {
+        animation: neonz 1s linear infinite;
+        filter: drop-shadow(0rem -2rem 0.75rem $blue);;
+        position: absolute;
+        top: 67vh;
+        left: 46.5vw;
+        width: 220px;
+        // z-index: -1;
+        height: auto;
+        transform: translate(-50%,-50%);
+        @media screen and (max-width:766px) {
+            width: 200px;
+            top: 63vh;
+            left: 39vw;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+      }
     .mengkilat {
         position: relative;
         top: 0;
