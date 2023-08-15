@@ -135,6 +135,9 @@
             width: 100px;
             height: auto;
             animation: asap 1s linear infinite;
+            @media screen and (max-width:766px) {
+                width: 80px;
+            }
             &.boxs {
                 animation: asaps .8s linear infinite;
             }
@@ -159,6 +162,7 @@
                 width: 60px;
                 animation-duration: 10s;
             }
+            
 
            
             img {
