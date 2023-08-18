@@ -303,6 +303,7 @@
 .kete {
     position: relative;
     padding: 2px 8px;
+    border-radius: 8px;
     margin-bottom: 8px;
     background: rgba($color: white, $alpha: .6);
     &::before {
@@ -312,7 +313,7 @@
         width: 30%;
         height: 3px;
         background: #439c8c;
-        right: 0;
+        right: 20px;
     }
     li {
         font-size: .85rem;
