@@ -220,7 +220,7 @@
         margin-top: 100px;
     }
     .no-1 {
-        background: white;
+        background: rgba(white,.5);
         transform: skew(3deg,-3deg);
         box-shadow: 2px 2px 2px $blue;
         margin-top: 16px;
@@ -237,7 +237,7 @@
     }
 
     .no-2 {
-        background: white;
+        background: rgba(white,.5);
         transform: skew(3deg,-3deg);
         box-shadow: 2px 2px 2px $blue;
         margin-top: 36px;
@@ -253,7 +253,7 @@
         }
     }
     .no-3 {
-        background: white;
+        background: rgba(white,.5);
         transform: skew(3deg,-3deg);
         box-shadow: 2px 2px 2px $blue;
         margin-top: 70px;
@@ -269,7 +269,8 @@
         }
     }
     .no-4 {
-        background: white;
+        background: rgba(white,.5);
+        border-radius: 2px;
         transform: skew(3deg,-3deg);
         box-shadow: 2px 2px 2px $blue;
         margin-top: 26px;
@@ -296,5 +297,11 @@
     height: 68px;
     @media screen and (max-width:766px) {
         height: 136px;
+    }
+}
+
+.kete {
+    li {
+        font-size: .85rem;
     }
 }
