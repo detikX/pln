@@ -79,6 +79,7 @@
                 }
             }
             p{
+                margin-bottom: 0;
                 &.small {
                     @media screen and (max-width:766px) {
                         display: inline-block;
