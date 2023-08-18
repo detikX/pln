@@ -309,7 +309,7 @@
     border-radius: 8px;
     margin-bottom: 8px;
     // background: rgba($color: white, $alpha: .6);
-    background: linear-gradient(45deg, #d0f8c6, white);
+    background:linear-gradient(-45deg, #e0e0e0, white);
     &::before {
         content: "";
         position: absolute;
