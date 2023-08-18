@@ -127,7 +127,8 @@
 
 .bg {
     &-merah {
-        background:rgba(#f1a7a3,.7) ;
+        // background:rgba(#f1a7a3,.7) ;
+        background: linear-gradient(-45deg, rgba(241,167,163,.8),#fcfcfc);
     }
     &-ungu {
         background: #e2d3df;
@@ -136,10 +137,11 @@
         background: #c9c9c9;
     }
     &-hijau {
-        background: #9af0e2;
+        // background: #9af0e2;
+        background: linear-gradient(45deg, rgba(#9af0e2,.8),#fcfcfc);
         @media screen and (max-width:766px) {
-            background: #bcf3ea;
-            
+            // background: #bcf3ea;
+            background: linear-gradient(45deg, rgba(#bcf3ea,.8),#fcfcfc);;
         }
     }
 }
@@ -306,7 +308,8 @@
     padding: 2px 8px;
     border-radius: 8px;
     margin-bottom: 8px;
-    background: rgba($color: white, $alpha: .6);
+    // background: rgba($color: white, $alpha: .6);
+    background: linear-gradient(45deg, #d0f8c6, white);
     &::before {
         content: "";
         position: absolute;
