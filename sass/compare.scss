@@ -301,6 +301,19 @@
 }
 
 .kete {
+    position: relative;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    background: rgba($color: white, $alpha: .6);
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 30%;
+        height: 3px;
+        background: #439c8c;
+        right: 0;
+    }
     li {
         font-size: .85rem;
     }
