@@ -64,7 +64,7 @@
             // }
         }
         .bawah {
-
+            position: relative;
             padding: 8px;
             width: 80%;
             margin: 4px auto;
@@ -148,7 +148,8 @@
 .bg {
     &-merah {
         // background:rgba(#f1a7a3,.7) ;
-        background: linear-gradient(-45deg, rgba(241,167,163,.8),#fcfcfc);
+        background: linear-gradient(-45deg, rgba(241,167,163,1),#fcfcfc);
+        z-index: 1;
     }
     &-ungu {
         background: #e2d3df;
@@ -158,7 +159,8 @@
     }
     &-hijau {
         // background: #9af0e2;
-        background: linear-gradient(45deg, rgba(#9af0e2,.8),#fcfcfc);
+        background: linear-gradient(45deg, rgba(#9af0e2,1),#fcfcfc);
+        z-index: 1;
         @media screen and (max-width:766px) {
             // background: #bcf3ea;
             background: linear-gradient(45deg, rgba(#bcf3ea,.8),#fcfcfc);;
@@ -193,6 +195,7 @@
     .kotak-mobil {
         display: inline-block;
         width: 30%;
+
         vertical-align: top;
         margin-bottom: 16px;
         
@@ -244,13 +247,35 @@
     }
     .no-1 {
         background: rgba(white,.5);
-        transform: skew(2deg,-2deg);
+        // transform: skew(2deg,-2deg);
+        position: relative;
         box-shadow: 2px 2px 2px $blue;
         margin-top: 16px;
         padding: 0;
         div {
             // font-weight: 700;
             font-size: .85rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -50%;
+                width: 50%;
+                top: 50%;
+                background: #31607b;
+                height: 1.5px;
+                z-index: -1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -50%;
+                width: 50%;
+                top: 50%;
+                background: #31607b;
+                height: 1.5px;
+                z-index: -1;
+            }
         }
         @media screen and (max-width:766px) {
             margin-top: 24px;
@@ -261,13 +286,35 @@
 
     .no-2 {
         background: rgba(white,.5);
-        transform: skew(2deg,-2deg);
+        // transform: skew(2deg,-2deg);
         box-shadow: 2px 2px 2px $blue;
         margin-top: 36px;
         padding: 0;
+        position: relative;
         div {
             // font-weight: 700;
             font-size: .85rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -50%;
+                width: 50%;
+                top: 50%;
+                background: #31607b;
+                height: 1.5px;
+                z-index: -1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -50%;
+                width: 50%;
+                top: 50%;
+                background: #31607b;
+                height: 1.5px;
+                z-index: -1;
+            }
         }
         @media screen and (max-width:766px) {
             margin-top: 62px;
@@ -277,16 +324,38 @@
     }
     .no-3 {
         background: rgba(white,.5);
-        transform: skew(2deg,-2deg);
+        // transform: skew(2deg,-2deg);
         box-shadow: 2px 2px 2px $blue;
         margin-top: 70px;
+        position: relative;
         padding: 0;
         div {
             // font-weight: 700;
             font-size: .85rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -50%;
+                width: 50%;
+                top: 50%;
+                background: #31607b;
+                height: 1.5px;
+                z-index: -1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -50%;
+                width: 50%;
+                top: 50%;
+                background: #31607b;
+                height: 1.5px;
+                z-index: -1;
+            }
         }
         @media screen and (max-width:766px) {
-            margin-top: 100px;
+            margin-top: 76px;
             // background: rgba(yellow,.5);
             transform: initial;
         }
@@ -294,17 +363,38 @@
     .no-4 {
         background: rgba(white,.5);
         border-radius: 2px;
-        transform: skew(2deg,-2deg);
+        // transform: skew(2deg,-2deg);
         box-shadow: 2px 2px 2px $blue;
         margin-top: 26px;
+        position: relative;
         padding: 0;
         div {
             // font-weight: 700;
             font-size: .85rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -50%;
+                width: 50%;
+                top: 50%;
+                background: #31607b;
+                height: 2px;
+                z-index: -1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -50%;
+                width: 50%;
+                top: 50%;
+                background: #31607b;
+                height: 2px;
+                z-index: -1;
+            }
         }
         @media screen and (max-width:766px) {
             margin-top: 40px;
-            // background: rgba(yellow,.5);
             transform: initial;
         }
     }
