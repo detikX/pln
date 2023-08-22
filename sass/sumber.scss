@@ -5,6 +5,9 @@
     min-height: 50vh;
     // min-height: auto;
     border-top: 1px solid $blue;
+    h3,h4 {
+        font-family: 'Prompt';
+    }
     .img {
         width: 240px;
         height: auto;
@@ -87,8 +90,9 @@ $greenx: #99d871;
             object-fit: contain;
         }
     }
-    h3 {
+    h3,h4 {
         font-size: 2rem;
+        font-family: 'Prompt';
         &::before {
             top: 10px !important;
         }
@@ -99,4 +103,49 @@ $greenx: #99d871;
     .name {
         font-weight: bold;
     }
+}
+
+
+.baca-detikx {
+    .bacajuga_box {
+        display: initial !important;
+        .container {
+            display: none;
+        }
+    }
+    .bacajuga {
+        width: 100% !important;
+        display: block;
+        a {
+            display: inline-block;
+            padding: 0px;
+            width: 47% !important;
+            margin: 0 8px;
+            position: relative;
+            height: 320px;
+            text-align: left;
+            @media screen and (max-width:766px) {
+                width: 100% !important;
+                margin: 4px 0;
+            }
+            &:hover {
+                text-decoration: none;
+                color: orange !important;
+            }
+            article {
+                position: absolute;
+                top: initial;
+                /* transform: translateY(-50%); */
+                width: 100%;
+                background: linear-gradient(to top, black, transparent);
+                padding: 8px;
+                bottom: 0;
+                transform: initial;
+                h2 {
+                    font-family: 'Prompt' !important;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }   
 }

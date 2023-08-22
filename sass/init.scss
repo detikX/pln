@@ -17,6 +17,8 @@ main {
     // }
 }
 
+
+
 .firstletter {
     &::first-letter {
         float: left;
@@ -108,8 +110,8 @@ main {
 }
 
 #nav {
-    background: rgba($red, 0.5) !important;
-    z-index: 99 !important;
+    background: rgb(6 114 105 / 50%) !important;
+    z-index: 19 !important;
     backdrop-filter: blur(11px);
     @media screen and (max-width: 766px) {
         backdrop-filter: initial;
@@ -138,6 +140,10 @@ main {
 h2,
 h3 {
     font-weight: 700;
+}
+
+.bg-blues {
+    background: $blue;
 }
 
 section {
