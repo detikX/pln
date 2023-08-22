@@ -172,7 +172,9 @@
         vertical-align: middle;
         width: 50%;
         border-radius: 8px;
-        padding: 4px;
+        padding: 4px 8px;
+        // filter: drop-shadow(2px 2px 2px white);
+
         background: rgba($color: white, $alpha: .6);
         font-size: 1rem;
     }
